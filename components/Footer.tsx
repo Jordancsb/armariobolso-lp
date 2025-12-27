@@ -59,7 +59,11 @@ export default function Footer() {
             <ul className="space-y-1 text-[11px]">
               <li>Sobre</li>
               <li>Parceiros</li>
-              <li>Privacidade</li>
+              <li>
+                <a href="/privacy-policy#privacy-policy" className="hover:text-slate-900">
+                  Privacidade
+                </a>
+              </li>
             </ul>
           </div>
         </div>
