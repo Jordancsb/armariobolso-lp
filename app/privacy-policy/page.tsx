@@ -42,6 +42,12 @@ export default function PrivacyPolicyPage() {
 
             <section>
               <p className="text-slate-700 mb-4">
+                Os dados armazenados são excluídos automaticamente após 90 dias, garantindo que apenas informações recentes sejam mantidas em nossos servidores.
+              </p>
+            </section>
+
+            <section>
+              <p className="text-slate-700 mb-4">
                 O Armário de Bolso não utiliza a câmera para coleta automática de dados, nem realiza gravações sem a ação explícita do usuário.
               </p>
             </section>
@@ -54,6 +60,11 @@ export default function PrivacyPolicyPage() {
                 <p className="text-slate-700">
                   <a href="mailto:contato@armariobolso.com" className="text-slate-900 font-medium hover:underline">
                     contato@armariobolso.com
+                  </a>
+                </p>
+                <p className="text-slate-700">
+                  <a href="mailto:jcaindoor+absuporte@gmail.com" className="text-slate-900 font-medium hover:underline">
+                    jcaindoor+absuporte@gmail.com
                   </a>
                 </p>
               </div>

@@ -7,9 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#000000",
-        primarySoft: "#f3f4f6",
-        secondary: "#FFC5D3",
+        primary: "#a1cfea",      // Azul claro do logo
+        secondary: "#ae98e2",    // Roxo/lilás do logo
+        primarySoft: "#e8f4fb",  // Azul muito claro para backgrounds
+        secondarySoft: "#f0ebf9", // Roxo muito claro para backgrounds
+      },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(135deg, #a1cfea 0%, #ae98e2 100%)',
+        'gradient-soft': 'linear-gradient(135deg, #e8f4fb 0%, #f0ebf9 100%)',
       },
     },
   },

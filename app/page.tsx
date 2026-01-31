@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-gradient-soft">
       <Header />
       <Hero />
       <FeaturesRow />

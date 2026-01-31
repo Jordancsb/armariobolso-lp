@@ -39,21 +39,22 @@ export default function FeaturesRow() {
   return (
     <section
       id="features"
-      className="border-y border-slate-200 bg-gray-50 py-12 md:py-16"
+      className="border-y border-primary/20 bg-white py-12 md:py-16"
     >
       <div className="mx-auto max-w-6xl px-4">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8">
-          {items.map((item) => {
+          {items.map((item, index) => {
             const Icon = item.icon;
+            const isEven = index % 2 === 0;
             return (
               <div key={item.title} className="flex flex-col">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-200 text-black">
+                <div className={`flex h-12 w-12 items-center justify-center rounded-xl ${isEven ? 'bg-primarySoft' : 'bg-secondarySoft'} text-black`}>
                   <Icon className="h-6 w-6" />
                 </div>
-                <h3 className="mt-4 text-base font-semibold text-slate-900 md:text-lg">
+                <h3 className="mt-4 text-base font-semibold text-black md:text-lg">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                <p className="mt-2 text-sm leading-relaxed text-slate-700">
                   {item.desc}
                 </p>
               </div>
